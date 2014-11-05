@@ -1,0 +1,19 @@
+@import "global";
+
+/*
+Reset
+*/
+@import "inc/normalize";
+
+html {
+	@include rhythm-normalize();
+	box-sizing: border-box;
+}
+
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+
+/*
+Layout
+*/
