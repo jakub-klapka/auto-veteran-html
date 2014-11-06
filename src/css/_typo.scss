@@ -1,0 +1,151 @@
+@import "global";
+
+%typo {
+	font-family: $main_font;
+
+	* {
+		margin: 0;
+	}
+
+	* + * {
+		margin-top: rhythm(1);
+		margin-bottom: 0;
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		font-family: $light_font;
+		font-weight: normal;
+	}
+
+	h1 {
+		@include rhythm-text(32px, 1);
+	}
+
+	h2 {
+		@include rhythm-text(28px, 1);
+	}
+
+	h3 {
+		@include rhythm-text(26px, 1);
+	}
+
+	ul, ol {
+		li {
+			margin-top: 0;
+		}
+	}
+
+	blockquote {
+		margin-left: 0;
+		margin-right: 0;
+		padding: rhythm(1);
+		border: 1px solid darken( $border_grey, 50% );
+		background: $border_grey;
+	}
+
+	a {
+		color: inherit;
+		transition: color 300ms;
+
+		&:hover {
+			text-decoration: none;
+			color: $menu_grey;
+		}
+	}
+
+	hr {
+		border: none;
+		height: 1px;
+		margin-top: ( rhythm(1) - 1px );
+		border-bottom: 1px solid $border_grey;
+	}
+
+	/* =WordPress Core
+-------------------------------------------------------------- */
+	.alignnone {
+		margin: 5px 20px 20px 0;
+	}
+
+	.aligncenter,
+	div.aligncenter {
+		display: block;
+		margin: 5px auto 5px auto;
+	}
+
+	.alignright {
+		float:right;
+		margin: 5px 0 20px 20px;
+	}
+
+	.alignleft {
+		float: left;
+		margin: 5px 20px 20px 0;
+	}
+
+	a img.alignright {
+		float: right;
+		margin: 5px 0 20px 20px;
+	}
+
+	a img.alignnone {
+		margin: 5px 20px 20px 0;
+	}
+
+	a img.alignleft {
+		float: left;
+		margin: 5px 20px 20px 0;
+	}
+
+	a img.aligncenter {
+		display: block;
+		margin-left: auto;
+		margin-right: auto
+	}
+
+	.wp-caption {
+		background: #fff;
+		border: 1px solid #f0f0f0;
+		max-width: 96%; /* Image does not overflow the content area */
+		padding: 5px 3px 10px;
+		text-align: center;
+	}
+
+	.wp-caption.alignnone {
+		margin: 5px 20px 20px 0;
+	}
+
+	.wp-caption.alignleft {
+		margin: 5px 20px 20px 0;
+	}
+
+	.wp-caption.alignright {
+		margin: 5px 0 20px 20px;
+	}
+
+	.wp-caption img {
+		border: 0 none;
+		height: auto;
+		margin: 0;
+		max-width: 98.5%;
+		padding: 0;
+		width: auto;
+	}
+
+	.wp-caption p.wp-caption-text {
+		font-size: 11px;
+		line-height: 17px;
+		margin: 0;
+		padding: 0 4px 5px;
+	}
+
+	.gallery-caption {
+		margin-top: 0;
+		margin-bottom: rhythm(1);
+	}
+
+	.gallery {
+		margin-top: rhythm(1) !important;
+	}
+
+
+}

@@ -42,7 +42,7 @@ Livereload
 gulp.task( 'livereload', function() {
 
 	livereload.listen();
-	gulp.watch( [ '*.html', 'dist/**/*', 'src/js/**/*' ], function( evt ){
+	gulp.watch( [ '*.html', 'dist/**/*', 'src/js/**/*', '!**/*.map' ], function( evt ){
 		livereload.changed( evt.path );
 	} );
 

@@ -1,10 +1,173 @@
 <!doctype html>
-<html lang="cs-CZ">
+<html lang="cs-CZ" itemscope itemtype="http://schema.org/WebPage">
 <head>
 	<meta charset="UTF-8">
-	<title>Auto Veteran</title>
+	<title itemprop="name">Auto Veteran</title>
+
+	<!-- http://www.google.com/fonts#UsePlace:use/Collection:Open+Sans:400italic,700italic,400,700|Open+Sans+Condensed:300 -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700|Open+Sans+Condensed:300&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="dist/css/layout.css"/>
+
 </head>
 <body>
+
+<div class="page_wrap">
+
+	<header class="main_header" itemscope itemtype="http://schema.org/WPHeader">
+		<img src="//placehold.it/960x300" alt="Logo" class="main_header__image" itemprop="image"/>
+
+		<nav class="main_header__nav" role="navigation">
+			<ul class="main_header__nav__menu" itemscope itemtype="http://schema.org/SiteNavigationElement" >
+				<li class="main_header__nav__menu__item is-active"><a href="" itemprop="url name">Home</a></li>
+				<li class="main_header__nav__menu__item"><a href="" itemprop="url name">Current stock</a></li>
+				<li class="main_header__nav__menu__item"><a href="" itemprop="url name">Previous stock</a></li>
+				<li class="main_header__nav__menu__item"><a href="" itemprop="url name">Services</a></li>
+				<li class="main_header__nav__menu__item"><a href="" itemprop="url name">Videos</a></li>
+				<li class="main_header__nav__menu__item"><a href="" itemprop="url name">News</a></li>
+				<li class="main_header__nav__menu__item"><a href="" itemprop="url name">About us</a></li>
+				<li class="main_header__nav__menu__item"><a href="" itemprop="url name">Contact</a></li>
+			</ul>
+			<ul class="main_header__nav__language" itemscope itemtype="http://schema.org/SiteNavigationElement" >
+				<li class="main_header__nav__language__item"><a href="" itemprop="url name">CS</a></li>
+				<li class="main_header__nav__language__item"><a href="" itemprop="url name">EN</a></li>
+			</ul>
+		</nav>
+
+	</header>
+
+	<article class="main_content" role="main" itemprop="mainContentOfPage">
+
+		<h1>HTML Ipsum Presents</h1>
+
+		<p><strong>Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, <code>commodo vitae</code>, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. <a href="#">Donec non enim</a> in turpis pulvinar facilisis. Ut felis.</p>
+
+		<hr/>
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquid amet aspernatur dignissimos eligendi
+			eveniet fuga laborum magnam magni molestias neque, odio officia optio possimus praesentium recusandae rerum
+			vel veritatis.</p>
+
+		<h2>Header Level 2</h2>
+
+		<ol>
+			<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+			<li>Aliquam tincidunt mauris eu risus.</li>
+		</ol>
+
+		<blockquote><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.</p></blockquote>
+
+		<h3>Header Level 3</h3>
+
+		<ul>
+			<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+			<li>Aliquam tincidunt mauris eu risus.</li>
+		</ul>
+
+
+		<h2>Image Alignment Tests: Un-Captioned Images</h2>
+		<h3>Left-align, no caption</h3>
+		<p>Left-aligned image with no caption, and text before and after. <img src="sample_content/test-image-landscape.jpg" alt="" title="test-image-landscape" width="300" height="199" class="alignleft size-full wp-image-535" /> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed odio nibh, tincidunt adipiscing, pretium nec, tincidunt id, enim. Fusce scelerisque nunc vitae nisl. Quisque quis urna in velit dictum pellentesque. Vivamus a quam. Curabitur eu tortor id turpis tristique adipiscing. Morbi blandit. Maecenas vel est. Nunc aliquam, orci at accumsan commodo, libero nibh euismod augue, a ullamcorper velit dui et purus. Aenean volutpat, ipsum ac imperdiet fermentum, dui dui suscipit arcu, vitae dictum purus diam ac ligula.</p>
+		<h3>Right-align, no caption</h3>
+		<p>Right-aligned image with no caption, and text before and after. <img src="sample_content/test-image-landscape.jpg" alt="" title="test-image-landscape" width="300" height="199" class="alignright size-full wp-image-535" /> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed odio nibh, tincidunt adipiscing, pretium nec, tincidunt id, enim. Fusce scelerisque nunc vitae nisl. Quisque quis urna in velit dictum pellentesque. Vivamus a quam. Curabitur eu tortor id turpis tristique adipiscing. Morbi blandit. Maecenas vel est. Nunc aliquam, orci at accumsan commodo, libero nibh euismod augue, a ullamcorper velit dui et purus. Aenean volutpat, ipsum ac imperdiet fermentum, dui dui suscipit arcu, vitae dictum purus diam ac ligula.</p>
+
+		<h2>Image Alignment Tests: Captioned Images</h2>
+		<h3>Center-align with Caption</h3>
+		<p>Center-aligned image with caption, and text before and after.</p> <div id="attachment_544" class="wp-caption aligncenter" style="width: 300px"><a href="sample_content/boat.jpg"><img src="sample_content/boat.jpg" alt="" title="boat" width="300" height="198" class="size-medium wp-image-544" /></a><p class="wp-caption-text">A picture is worth a thousand words</p></div> <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed odio nibh, tincidunt adipiscing, pretium nec, tincidunt id, enim. Fusce scelerisque nunc vitae nisl. Quisque quis urna in velit dictum pellentesque. Vivamus a quam. Curabitur eu tortor id turpis tristique adipiscing. Morbi blandit. Maecenas vel est. Nunc aliquam, orci at accumsan commodo, libero nibh euismod augue, a ullamcorper velit dui et purus. Aenean volutpat, ipsum ac imperdiet fermentum, dui dui suscipit arcu, vitae dictum purus diam ac ligula.</p>
+		<h3>Left-align with caption</h3>
+		<p>Left-aligned image with caption, and text before and after. </p><div id="attachment_545" class="wp-caption alignleft" style="width: 300px"><a href="sample_content/boat.jpg"><img src="sample_content/boat.jpg" alt="" title="boat" width="300" height="198" class="size-medium wp-image-544" /></a><p class="wp-caption-text">A picture is worth a thousand words</p></div><p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed odio nibh, tincidunt adipiscing, pretium nec, tincidunt id, enim. Fusce scelerisque nunc vitae nisl. Quisque quis urna in velit dictum pellentesque. Vivamus a quam. Curabitur eu tortor id turpis tristique adipiscing. Morbi blandit. Maecenas vel est. Nunc aliquam, orci at accumsan commodo, libero nibh euismod augue, a ullamcorper velit dui et purus. Aenean volutpat, ipsum ac imperdiet fermentum, dui dui suscipit arcu, vitae dictum purus diam ac ligula.</p>
+		<h3>Right-align with caption</h3>
+		<p>Right-aligned image with caption, and text before and after.</p> <div id="attachment_546" class="wp-caption alignright" style="width: 300px"><a href="sample_content/boat.jpg"><img src="sample_content/boat.jpg" alt="" title="boat" width="300" height="198" class="size-medium wp-image-544" /></a><p class="wp-caption-text">A picture is worth a thousand words</p></div><p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed odio nibh, tincidunt adipiscing, pretium nec, tincidunt id, enim. Fusce scelerisque nunc vitae nisl. Quisque quis urna in velit dictum pellentesque. Vivamus a quam. Curabitur eu tortor id turpis tristique adipiscing. Morbi blandit. Maecenas vel est. Nunc aliquam, orci at accumsan commodo, libero nibh euismod augue, a ullamcorper velit dui et purus. Aenean volutpat, ipsum ac imperdiet fermentum, dui dui suscipit arcu, vitae dictum purus diam ac ligula.</p>
+
+			<div style="clear:both;"></div>
+
+		<h1 class="entry-title">Post Format Test: Gallery</h1>
+		<style type='text/css'>
+			#gallery-1 {
+				margin: auto;
+			}
+			#gallery-1 .gallery-item {
+				float: left;
+				margin-top: 10px;
+				text-align: center;
+				width: 33%;
+			}
+			#gallery-1 img {
+				border: 2px solid #cfcfcf;
+			}
+			#gallery-1 .gallery-caption {
+				margin-left: 0;
+			}
+		</style>
+		<!-- see gallery_shortcode() in wp-includes/media.php -->
+		<div id='gallery-1' class='gallery galleryid-555 gallery-columns-3 gallery-size-thumbnail'><dl class='gallery-item'>
+			<dt class='gallery-icon'>
+				<a href='sample_content/canola2-150x150.jpg' title='canola2'><img width="150" height="150" src="sample_content/canola2-150x150.jpg" class="attachment-thumbnail" alt="canola" /></a>
+			</dt>
+			<dd class='wp-caption-text gallery-caption'>
+				Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec mollis. Quisque convallis libero in sapien pharetra tincidunt. Aliquam elit ante, malesuada id, tempor eu, gravida id, odio. Maecenas suscipit, risus et eleifend imperdiet, nisi orci ullamcorper massa, et adipiscing orci velit quis magna.
+			</dd></dl><dl class='gallery-item'>
+			<dt class='gallery-icon'>
+				<a href='sample_content/dsc20050315_145007_132-150x150.jpg' title='dsc20050315_145007_132'><img width="150" height="150" src="sample_content/dsc20050315_145007_132-150x150.jpg" class="attachment-thumbnail" alt="dsc20050315_145007_132" /></a>
+			</dt></dl><dl class='gallery-item'>
+			<dt class='gallery-icon'>
+				<a href='sample_content/dsc20050727_091048_222-150x150.jpg' title='dsc20050727_091048_222'><img width="150" height="150" src="sample_content/dsc20050727_091048_222-150x150.jpg" class="attachment-thumbnail" alt="dsc20050727_091048_222" /></a>
+			</dt></dl><br style="clear: both" /><dl class='gallery-item'>
+			<dt class='gallery-icon'>
+				<a href='sample_content/dsc20050813_115856_52-150x150.jpg' title='dsc20050813_115856_52'><img width="150" height="150" src="sample_content/dsc20050813_115856_52-150x150.jpg" class="attachment-thumbnail" alt="dsc20050813_115856_52" /></a>
+			</dt></dl><dl class='gallery-item'>
+			<dt class='gallery-icon'>
+				<a href='sample_content/dsc20050831_165238_332-150x150.jpg' title='dsc20050831_165238_332'><img width="150" height="150" src="sample_content/dsc20050831_165238_332-150x150.jpg" class="attachment-thumbnail" alt="dsc20050831_165238_332" /></a>
+			</dt></dl><dl class='gallery-item'>
+			<dt class='gallery-icon'>
+				<a href='sample_content/dsc20050901_105100_212-150x150.jpg' title='dsc20050901_105100_212'><img width="150" height="150" src="sample_content/dsc20050901_105100_212-150x150.jpg" class="attachment-thumbnail" alt="Seed pods on stem, Woodvale" /></a>
+			</dt>
+			<dd class='wp-caption-text gallery-caption'>
+				Seed pods on stem, Woodvale
+			</dd></dl><br style="clear: both" /><dl class='gallery-item'>
+			<dt class='gallery-icon'>
+				<a href='sample_content/100_5478-150x150.jpg' title='Bell on Wharf'><img width="150" height="150" src="sample_content/100_5478-150x150.jpg" class="attachment-thumbnail" alt="Bell on Wharf" /></a>
+			</dt>
+			<dd class='wp-caption-text gallery-caption'>
+				Bell on wharf in San Francisco
+			</dd></dl><dl class='gallery-item'>
+			<dt class='gallery-icon'>
+				<a href='sample_content/100_5540-150x150.jpg' title='Golden Gate Bridge'><img width="150" height="150" src="sample_content/100_5540-150x150.jpg" class="attachment-thumbnail" alt="Golden Gate Bridge" /></a>
+			</dt>
+			<dd class='wp-caption-text gallery-caption'>
+				Golden Gate Bridge
+			</dd></dl><dl class='gallery-item'>
+			<dt class='gallery-icon'>
+				<a href='sample_content/cep00032-150x150.jpg' title='Sunburst Over River'><img width="150" height="150" src="sample_content/cep00032-150x150.jpg" class="attachment-thumbnail" alt="Sunburst Over River" /></a>
+			</dt>
+			<dd class='wp-caption-text gallery-caption'>
+				Sunburst over the Clinch River, Southwest Virginia.
+			</dd></dl></div><br style="clear: both" />
+
+	</article>
+
+
+	<footer class="main_footer" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
+
+		<div class="main_footer__copyright">
+			Created by <a href="http://www.pixia.cz">Pixia.cz</a> & <a href="http://www.lumiart.cz">Lumiart.cz</a>
+		</div>
+
+		<nav class="main_footer_nav" role="navigation">
+			<ul class="main_footer_nav__menu" itemscope itemtype="http://schema.org/SiteNavigationElement" >
+				<li class="main_footer_nav__menu__item"><a href="" itemprop="url name">Current stock</a></li>
+				<li class="main_footer_nav__menu__item"><a href="" itemprop="url name">Previous stock</a></li>
+				<li class="main_footer_nav__menu__item"><a href="" itemprop="url name">Services</a></li>
+				<li class="main_footer_nav__menu__item"><a href="" itemprop="url name">Videos</a></li>
+				<li class="main_footer_nav__menu__item"><a href="" itemprop="url name">News</a></li>
+				<li class="main_footer_nav__menu__item"><a href="" itemprop="url name">About us</a></li>
+				<li class="main_footer_nav__menu__item"><a href="" itemprop="url name">Contact</a></li>
+			</ul>
+		</nav>
+
+	</footer>
+
+
+</div>
 
 </body>
 </html>

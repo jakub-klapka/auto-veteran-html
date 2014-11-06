@@ -4,4 +4,17 @@
 Rhythm
 */
 @import "inc/rhythm";
-@include rhythm-init(18px, 1.5, 'golden section');
+@include rhythm-init(16px, 1.6, 'golden section');
+
+/*
+Vars
+*/
+$body_bg: #f9f9f9;
+$page_wrap_width: 960px;
+$menu_height: 62px;
+$menu_grey: #5d5d5d;
+$border_grey: #c1c1c1;
+$main_gold: #ffa500;
+
+$main_font: 'Open Sans', sans-serif;
+$light_font: 'Open Sans Condensed', sans-serif;
