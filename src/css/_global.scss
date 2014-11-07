@@ -15,6 +15,47 @@ $menu_height: 62px;
 $menu_grey: #5d5d5d;
 $border_grey: #c1c1c1;
 $main_gold: #ffa500;
+$home_color: darken( $menu_grey, 10% );
 
 $main_font: 'Open Sans', sans-serif;
 $light_font: 'Open Sans Condensed', sans-serif;
+
+
+@mixin gold_triangle() {
+	display: inline-block;
+	$size: 8px;
+	vertical-align: middle;
+	margin-right: 4px;
+	content: '';
+	width: 0;
+	height: 0;
+	margin-top: -3px;
+	border-style: solid;
+	border-width: ( $size / 2 ) 0 ( $size / 2 ) ( $size * 0.75 );
+	border-color: transparent transparent transparent $main_gold;
+}
+
+@mixin block_shadow() {
+	position:relative;
+	box-shadow:0 1px 4px rgba(0, 0, 0, 0.2), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+
+	&:before, &:after {
+		content:"";
+		position:absolute;
+		z-index:-1;
+		box-shadow:0 0 20px rgba(0,0,0,0.2);
+		top:50%;
+		bottom:0;
+		left:10px;
+		right:10px;
+		border-radius:100px / 10px;
+	}
+}
+
+@mixin content_block() {
+	background: #FFF;
+	border: 1px solid $border_grey;
+	margin-bottom: rhythm(1);
+
+	@include block_shadow();
+}
