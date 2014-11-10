@@ -53,6 +53,16 @@
 			Object.create( VideoCarousel ).init( $( this ) );
 		} );
 
+
+		$( window ).load( function() {
+			var els = $('.home_recent_videos__video_strip__button__desc');
+			els.css( 'max-height', '100%' );
+			els.trunk8({
+				lines: 2
+			});
+			els.css( 'max-height', '' );
+		} );
+
 	} );
 
 } )( jQuery );

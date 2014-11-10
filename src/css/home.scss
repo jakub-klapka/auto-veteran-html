@@ -132,7 +132,25 @@ $home_about_us_padding: 10px;
 				background-color: darken( $body_bg, 10% );
 			}
 
-		}
+			}
+			.home_recent_videos__video_strip__button__desc {
+				$margin_top: 4px;
+				width: 130px;
+				display: flex;
+				font-size: 13px;
+				line-height: 17px;
+				text-align: left;
+				margin-top: $margin_top;
+				padding-left: 3px;
+				padding-right: 3px;
+
+				//overflowing:
+				max-height: calc( 2em + #{$margin_top} );
+				//overflow: hidden;
+				}
+				.home_recent_videos__video_strip__button__desc__trunk8 {
+
+				}
 
 .home_last_stock {
 	font-size: 0;
