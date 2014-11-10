@@ -8,6 +8,7 @@
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700|Open+Sans+Condensed:300&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="dist/css/layout.css"/>
 	<link rel="stylesheet" href="dist/css/home.css"/>
+	<link rel="stylesheet" href="dist/css/stock.css"/>
 
 
 </head>
@@ -48,6 +49,7 @@
 			<a class="home_about_us__button" href="">Browse our services</a>
 			<a class="home_about_us__button" href="">Contact us</a>
 		</section>
+
 		<section class="home_row__big home_section has-header home_recent_videos" data-video-carousel>
 			<script type="text/template" data-video-carousel-template>
 				<iframe width="590" height="332" src="//www.youtube.com/embed/[[YT_ID]]?autoplay=1" frameborder="0" allowfullscreen></iframe>
@@ -61,91 +63,94 @@
 			</div>
 			<div class="home_recent_videos__video_strip">
 				<button class="home_recent_videos__video_strip__button is-active" data-yt-id="rUD1DgU7Wqo" itemscope itemtype="http://schema.org/VideoObject" data-video-carousel-item>
-					<img src="//img.youtube.com/vi/rUD1DgU7Wqo/default.jpg" alt="Video title" itemprop="thumbnail"/>
+					<img class="home_recent_videos__video_strip__button__image" src="//img.youtube.com/vi/rUD1DgU7Wqo/mqdefault.jpg" alt="Video title" itemprop="thumbnail"/>
 					<span class="home_recent_videos__video_strip__button__desc" itemprop="name">Lorem ipsum.</span>
 					<meta itemprop="url" content="http://www.youtube.com?watch=4kLXn-ZppvI"/>
 				</button>
 				<button class="home_recent_videos__video_strip__button" data-yt-id="3cptxEiioQk" itemscope itemtype="http://schema.org/VideoObject" data-video-carousel-item>
-					<img src="//img.youtube.com/vi/3cptxEiioQk/default.jpg" alt="Video title"/>
+					<img class="home_recent_videos__video_strip__button__image" src="//img.youtube.com/vi/3cptxEiioQk/mqdefault.jpg" alt="Video title"/>
 					<span class="home_recent_videos__video_strip__button__desc" itemprop="name">Lorem ipsum dolor.</span>
 					<meta itemprop="url" content="https://www.youtube.com/watch?v=3cptxEiioQk&list=UU9J8bPnBhS5NdnRy0gxSiRQ"/>
 				</button>
 				<button class="home_recent_videos__video_strip__button" data-yt-id="Y-UrD20NlcI" itemscope itemtype="http://schema.org/VideoObject" data-video-carousel-item>
-					<img src="//img.youtube.com/vi/Y-UrD20NlcI/default.jpg" alt="Video title"/>
+					<img class="home_recent_videos__video_strip__button__image" src="//img.youtube.com/vi/Y-UrD20NlcI/mqdefault.jpg" alt="Video title"/>
 					<span class="home_recent_videos__video_strip__button__desc" itemprop="name">Lorem</span>
 					<meta itemprop="url" content="http://www.youtube.com?watch=4kLXn-ZppvI"/>
 				</button>
 				<button class="home_recent_videos__video_strip__button" data-yt-id="HWcjiY6fl7M" itemscope itemtype="http://schema.org/VideoObject" data-video-carousel-item>
-					<img src="//img.youtube.com/vi/HWcjiY6fl7M/default.jpg" alt="Video title"/>
+					<img class="home_recent_videos__video_strip__button__image" src="//img.youtube.com/vi/HWcjiY6fl7M/mqdefault.jpg" alt="Video title"/>
 					<span class="home_recent_videos__video_strip__button__desc" itemprop="name" id="test">
 						Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
 					</span>
 					<meta itemprop="url" content="http://www.youtube.com?watch=4kLXn-ZppvI"/>
 				</button>
 			</div>
+
+			<a class="home_section__more_link" href="">More</a>
 		</section>
 	</div>
 
-	<section class="home_last_stock home_section" role="main">
+	<section class="home_section stock" role="main">
 		<h1 class="home_section__header">Newest stock</h1>
 
-		<a href="" class="home_last_stock__item" itemscope itemtype="http://schema.org/Car">
+		<a href="" class="stock__item" itemscope itemtype="http://schema.org/Car">
 			<meta itemprop="url" content="http://..."/>
-			<div class="home_last_stock__image">
-				<img src="//lorempixel.com/200/100/transport?v=1" alt="Title" itemprop="image"/>
+			<div class="stock__image">
+				<img src="//lorempixel.com/200/135/transport?v=1" alt="Title" itemprop="image"/>
 			</div>
-			<div class="home_last_stock__name" itemprop="name">1936 MB 500k cabriolet</div>
+			<div class="stock__name" itemprop="name">1936 MB 500k cabriolet Lorem ipsum dolor sit.</div>
 		</a>
-		<a href="" class="home_last_stock__item" itemscope itemtype="http://schema.org/Car">
+		<a href="" class="stock__item" itemscope itemtype="http://schema.org/Car">
 			<meta itemprop="url" content="http://..."/>
-			<div class="home_last_stock__image">
-				<img src="//lorempixel.com/200/100/transport?v=2" alt="Title"/>
+			<div class="stock__image">
+				<img src="//lorempixel.com/200/135/transport?v=2" alt="Title"/>
 			</div>
-			<div class="home_last_stock__name" itemprop="name">1936 MB 500k cabriolet</div>
+			<div class="stock__name" itemprop="name">1936 MB 500k cabriolet</div>
 		</a>
-		<a href="" class="home_last_stock__item" itemscope itemtype="http://schema.org/Car">
+		<a href="" class="stock__item" itemscope itemtype="http://schema.org/Car">
 			<meta itemprop="url" content="http://..."/>
-			<div class="home_last_stock__image">
-				<img src="//lorempixel.com/200/100/transport?v=3" alt="Title"/>
+			<div class="stock__image">
+				<img src="//lorempixel.com/200/135/transport?v=3" alt="Title"/>
 			</div>
-			<div class="home_last_stock__name" itemprop="name">1936 MB 500k cabriolet</div>
+			<div class="stock__name" itemprop="name">1936 MB 500k cabriolet</div>
 		</a>
-		<a href="" class="home_last_stock__item" itemscope itemtype="http://schema.org/Car">
+		<a href="" class="stock__item" itemscope itemtype="http://schema.org/Car">
 			<meta itemprop="url" content="http://..."/>
-			<div class="home_last_stock__image">
-				<img src="//lorempixel.com/200/100/transport?v=4" alt="Title"/>
+			<div class="stock__image">
+				<img src="//lorempixel.com/200/135/transport?v=4" alt="Title"/>
 			</div>
-			<div class="home_last_stock__name" itemprop="name">1936 MB 500k cabriolet</div>
+			<div class="stock__name" itemprop="name">1936 MB 500k cabriolet</div>
 		</a>
-		<a href="" class="home_last_stock__item" itemscope itemtype="http://schema.org/Car">
+		<a href="" class="stock__item" itemscope itemtype="http://schema.org/Car">
 			<meta itemprop="url" content="http://..."/>
-			<div class="home_last_stock__image">
-				<img src="//lorempixel.com/200/100/transport?v=5" alt="Title"/>
+			<div class="stock__image">
+				<img src="//lorempixel.com/200/135/transport?v=5" alt="Title"/>
 			</div>
-			<div class="home_last_stock__name" itemprop="name">1936 MB 500k cabriolet</div>
+			<div class="stock__name" itemprop="name">1936 MB 500k cabriolet</div>
 		</a>
-		<a href="" class="home_last_stock__item" itemscope itemtype="http://schema.org/Car">
+		<a href="" class="stock__item" itemscope itemtype="http://schema.org/Car">
 			<meta itemprop="url" content="http://..."/>
-			<div class="home_last_stock__image">
-				<img src="//lorempixel.com/200/100/transport?v=6" alt="Title"/>
+			<div class="stock__image">
+				<img src="//lorempixel.com/200/135/transport?v=6" alt="Title"/>
 			</div>
-			<div class="home_last_stock__name" itemprop="name">1936 MB 500k cabriolet</div>
+			<div class="stock__name" itemprop="name">1936 MB 500k cabriolet</div>
 		</a>
-		<a href="" class="home_last_stock__item" itemscope itemtype="http://schema.org/Car">
+		<a href="" class="stock__item" itemscope itemtype="http://schema.org/Car">
 			<meta itemprop="url" content="http://..."/>
-			<div class="home_last_stock__image">
-				<img src="//lorempixel.com/200/100/transport?v=7" alt="Title"/>
+			<div class="stock__image">
+				<img src="//lorempixel.com/200/135/transport?v=7" alt="Title"/>
 			</div>
-			<div class="home_last_stock__name" itemprop="name">1936 MB 500k cabriolet</div>
+			<div class="stock__name" itemprop="name">1936 MB 500k cabriolet</div>
 		</a>
-		<a href="" class="home_last_stock__item" itemscope itemtype="http://schema.org/Car">
+		<a href="" class="stock__item" itemscope itemtype="http://schema.org/Car">
 			<meta itemprop="url" content="http://..."/>
-			<div class="home_last_stock__image">
-				<img src="//lorempixel.com/200/100/transport?v=8" alt="Title"/>
+			<div class="stock__image">
+				<img src="//lorempixel.com/200/135/transport?v=8" alt="Title"/>
 			</div>
-			<div class="home_last_stock__name" itemprop="name">1936 MB 500k cabriolet</div>
+			<div class="stock__name" itemprop="name">1936 MB 500k cabriolet</div>
 		</a>
 
+		<a class="home_section__more_link" href="">More</a>
 	</section>
 
 	<div class="home_row" role="main">
@@ -205,7 +210,7 @@
 				</div>
 			</article>
 
-
+			<a class="home_section__more_link" href="">More</a>
 		</section>
 
 		<section class="home_row__small home_section has-header home_sidebar">
