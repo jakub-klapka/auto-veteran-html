@@ -137,6 +137,112 @@ body {
 	padding: rhythm(1);
 }
 
+
+.content_block_row {
+	display: flex;
+	margin-bottom: rhythm(1);
+
+		&.is-no-stretch {
+			align-items: flex-start;
+		}
+
+		.no-flexbox & {
+			clear: both;
+			&::after {
+				content: '';
+				display: table;
+				clear: both;
+			}
+		}
+	}
+	.content_block_row__small {
+		flex: 1;
+
+		.no-flexbox & {
+			width: 33.3%;
+			float: left;
+		}
+	}
+	.content_block_row__big {
+		flex: 2;
+
+		.no-flexbox & {
+			width: calc( 66% - #{rhythm(1)} );
+			float: left;
+		}
+	}
+	.content_block_section:first-child {
+		margin-right: rhythm(1);
+	}
+
+	$content_block_header_height: rhythm(1.5);
+	.content_block_section {
+		@include content_block();
+
+		font-family: $main_font;
+		color: $home_color;
+
+		a {
+			color: inherit;
+			transition: color 300ms;
+
+			&:hover {
+				color: #000;
+				text-decoration: none;
+			}
+		}
+
+		&.has-header {
+			margin-top: $content_block_header_height;
+			position: relative;
+		}
+
+		}
+		.content_block_section__header.content_block_section__header {
+			position: absolute;
+			left: 0;
+			bottom: 100%;
+			font-size: 16px;
+			font-family: $light_font;
+			color: #FFF;
+			font-weight: normal;
+			text-transform: uppercase;
+			line-height: $content_block_header_height;
+			display: block;
+			height: $content_block_header_height;
+			background: $main_gold;
+			padding: 0 15px;
+			margin: 0;
+			margin-left: -1px;
+		}
+		.content_block_section__more_link.content_block_section__more_link {
+			position: absolute;
+			right: 0;
+			top: - ( rhythm(1) + 5px );
+			font-family: $light_font;
+			text-transform: uppercase;
+			text-decoration: none;
+			color: $border_grey;
+
+			&::after {
+				content: '';
+				display: inline-block;
+				margin-left: 10px;
+				width: 0;
+				height: 0;
+				border-style: solid;
+				border-width: 5px 0 5px 5px;
+				border-color: transparent transparent transparent $border_grey;
+				transition: border-color 300ms;
+			}
+
+			&:hover::after {
+				border-color: transparent transparent transparent #000;;
+			}
+		}
+
+
+
 .main_footer {
 	@extend %content_block;
 	}
@@ -190,3 +296,17 @@ body {
 			}
 		}
 	}
+
+.button_link.button_link {
+	display: block;
+	text-decoration: none;
+	position: relative;
+
+		&::before {
+			@include gold_triangle();
+		}
+
+		&:hover {
+			text-decoration: underline;
+		}
+}

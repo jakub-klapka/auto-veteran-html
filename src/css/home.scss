@@ -1,84 +1,5 @@
 @import "global";
 
-.home_row {
-	display: flex;
-	margin-bottom: rhythm(1);
-	}
-	.home_row__small {
-		flex: 1;
-	}
-	.home_row__big {
-		flex: 2;
-	}
-	.home_section:first-child {
-		margin-right: rhythm(1);
-	}
-
-	$home_header_height: rhythm(1.5);
-	.home_section {
-		@include content_block();
-
-		font-family: $main_font;
-		color: $home_color;
-
-		a {
-			color: inherit;
-			transition: color 300ms;
-
-			&:hover {
-				color: #000;
-				text-decoration: none;
-			}
-		}
-
-		&.has-header {
-			margin-top: $home_header_height;
-			position: relative;
-		}
-
-		}
-		.home_section__header.home_section__header {
-			position: absolute;
-			left: 0;
-			bottom: 100%;
-			font-size: 16px;
-			font-family: $light_font;
-			color: #FFF;
-			font-weight: normal;
-			text-transform: uppercase;
-			line-height: $home_header_height;
-			display: block;
-			height: $home_header_height;
-			background: $main_gold;
-			padding: 0 15px;
-			margin: 0;
-			margin-left: -1px;
-		}
-		.home_section__more_link.home_section__more_link {
-			position: absolute;
-			right: 0;
-			top: - ( rhythm(1) + 5px );
-			font-family: $light_font;
-			text-transform: uppercase;
-			text-decoration: none;
-			color: $border_grey;
-
-			&::after {
-				content: '';
-				display: inline-block;
-				margin-left: 10px;
-				width: 0;
-				height: 0;
-				border-style: solid;
-				border-width: 5px 0 5px 5px;
-				border-color: transparent transparent transparent $border_grey;
-				transition: border-color 300ms;
-			}
-
-			&:hover::after {
-				border-color: transparent transparent transparent #000;;
-			}
-		}
 
 $home_about_us_padding: 10px;
 .home_about_us {
@@ -116,6 +37,14 @@ $home_about_us_padding: 10px;
 	.home_recent_videos__video_strip {
 		display: flex;
 		align-items: stretch;
+
+		.no-flexbox & {
+			font-size: 0;
+
+			& > * {
+				font-size: 1rem;
+			}
+		}
 		}
 		.home_recent_videos__video_strip__button {
 			background: none;
@@ -133,33 +62,39 @@ $home_about_us_padding: 10px;
 			transition-property: border-color, background-color;
 			transition-duration: 300ms;
 
-			&.is-active {
-				border-left-color: $border_grey;
-				border-right-color: $border_grey;
-				border-top-color: transparent;
-				background: #FFF;
+				&.is-active {
+					border-left-color: $border_grey;
+					border-right-color: $border_grey;
+					border-top-color: transparent;
+					background: #FFF;
+
+					&:hover {
+						background: inherit;
+					}
+				}
+
+				&:first-child {
+					border-left: none;
+				}
+
+				&:last-child {
+					border-right: none;
+				}
+
+				&:focus,
+				&:active {
+					outline: none;
+				}
 
 				&:hover {
-					background: inherit;
+					background-color: darken( $body_bg, 10% );
 				}
-			}
 
-			&:first-child {
-				border-left: none;
-			}
-
-			&:last-child {
-				border-right: none;
-			}
-
-			&:focus,
-			&:active {
-				outline: none;
-			}
-
-			&:hover {
-				background-color: darken( $body_bg, 10% );
-			}
+				.no-flexbox & {
+					display: inline-block;
+					width: 25%;
+					vertical-align: top;
+				}
 
 			}
 			.home_recent_videos__video_strip__button__image {

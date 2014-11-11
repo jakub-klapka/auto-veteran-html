@@ -39,9 +39,9 @@
 	</header>
 
 
-	<div class="home_row" role="main">
-		<section class="home_row__small home_section has-header home_about_us">
-			<h1 class="home_section__header">About us</h1>
+	<div class="content_block_row" role="main">
+		<section class="content_block_row__small content_block_section has-header home_about_us">
+			<h1 class="content_block_section__header">About us</h1>
 			<img src="http://placehold.it/200x50&text=AVC_LOGO" alt="AVC Logo" class="home_about_us__logo"/>
 			<p><strong>Auto Veteran Company is</strong><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus adipisci asperiores blanditiis delectus distinctio ducimus nemo, neque nisi nobis, obcaecati omnis quibusdam quo rem reprehenderit tempore, ut vel. A, assumenda.
 				<a href="">Show more</a></p>
@@ -50,11 +50,11 @@
 			<a class="home_about_us__button" href="">Contact us</a>
 		</section>
 
-		<section class="home_row__big home_section has-header home_recent_videos" data-video-carousel>
+		<section class="content_block_row__big content_block_section has-header home_recent_videos" data-video-carousel>
 			<script type="text/template" data-video-carousel-template>
 				<iframe width="590" height="332" src="//www.youtube.com/embed/[[YT_ID]]?autoplay=1" frameborder="0" allowfullscreen></iframe>
 			</script>
-			<h1 class="home_section__header">Recent videos</h1>
+			<h1 class="content_block_section__header">Recent videos</h1>
 			<div class="home_recent_videos__main_video" itemscope itemtype="http://schema.org/VideoObject" data-video-carousel-main_video>
 				<iframe width="590" height="332" src="//www.youtube.com/embed/4kLXn-ZppvI" frameborder="0" allowfullscreen></iframe>
 				<meta itemprop="url" content="http://www.youtube.com?watch=4kLXn-ZppvI"/>
@@ -86,12 +86,12 @@
 				</button>
 			</div>
 
-			<a class="home_section__more_link" href="">More</a>
+			<a class="content_block_section__more_link" href="">More</a>
 		</section>
 	</div>
 
-	<section class="home_section stock" role="main">
-		<h1 class="home_section__header">Newest stock</h1>
+	<section class="content_block_section stock" role="main">
+		<h1 class="content_block_section__header">Newest stock</h1>
 
 		<a href="" class="stock__item" itemscope itemtype="http://schema.org/Car">
 			<meta itemprop="url" content="http://..."/>
@@ -150,13 +150,13 @@
 			<div class="stock__name" itemprop="name">1936 MB 500k cabriolet</div>
 		</a>
 
-		<a class="home_section__more_link" href="">More</a>
+		<a class="content_block_section__more_link" href="">More</a>
 	</section>
 
-	<div class="home_row" role="main">
+	<div class="content_block_row" role="main">
 
-		<section class="home_row__big home_section has-header home_recent_articles">
-			<h1 class="home_section__header">News</h1>
+		<section class="content_block_row__big content_block_section has-header home_recent_articles">
+			<h1 class="content_block_section__header">News</h1>
 
 			<article class="home_recent_articles__item" itemscope itemtype="http://schema.org/NewsArticle">
 				<a href="" class="home_recent_articles__item__image" itemprop="url">
@@ -210,11 +210,11 @@
 				</div>
 			</article>
 
-			<a class="home_section__more_link" href="">More</a>
+			<a class="content_block_section__more_link" href="">More</a>
 		</section>
 
-		<section class="home_row__small home_section has-header home_sidebar">
-			<h1 class="home_section__header">Whatever</h1>
+		<section class="content_block_row__small content_block_section has-header home_sidebar">
+			<h1 class="content_block_section__header">Whatever</h1>
 
 			<div class="home_sidebar__text">
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt iusto placeat repellendus
@@ -240,7 +240,7 @@
 	<footer class="main_footer" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
 
 		<div class="main_footer__copyright">
-			Created by <a href="http://www.pixia.cz">Pixia.cz</a> & <a href="http://www.lumiart.cz">Lumiart.cz</a>
+			Created by <a href="http://www.pixia.cz">Pixia.cz</a>
 		</div>
 
 		<nav class="main_footer_nav" role="navigation">
@@ -259,6 +259,8 @@
 
 
 </div>
+
+<script type="text/javascript" src="src/js/libs/modernizr.js"></script>
 
 <script type="text/javascript" src="src/js/libs/jquery-2.1.1.js"></script>
 
