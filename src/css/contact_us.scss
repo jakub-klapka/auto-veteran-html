@@ -57,7 +57,7 @@
 			textarea {
 				@extend %inputs;
 				width: 100%;
-				height: rhythm(2);
+				height: rhythm(4);
 				resize: none;
 				transition: height 200ms;
 			}
