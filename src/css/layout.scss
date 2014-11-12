@@ -315,6 +315,11 @@ body {
 			display: table;
 			clear: both;
 		}
+
+		&.has-top-margin {
+			margin-top: rhythm(2);
+		}
+
 	}
 	.columns__column {
 		width: calc( 50% - #{rhythm(0.5)} );
@@ -324,6 +329,17 @@ body {
 			&:nth-child(2) {
 				float: right;
 			}
+
+			$small_big_ratio: 0.6;
+
+			&.is-big {
+				width: calc( #{( 100% * $small_big_ratio )} - #{rhythm(0.5)} );
+			}
+
+			&.is-small {
+				width: calc( #{( 100% * ( 1 - $small_big_ratio ) )} - #{rhythm(0.5)} );
+			}
+
 	}
 
 
