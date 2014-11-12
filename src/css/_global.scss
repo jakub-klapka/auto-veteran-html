@@ -16,6 +16,7 @@ $menu_grey: #5d5d5d;
 $border_grey: #c1c1c1;
 $main_gold: #ffa500;
 $home_color: darken( $menu_grey, 10% );
+$content_block_header_height: rhythm(1.5);
 
 $main_font: 'Open Sans', sans-serif;
 $light_font: 'Open Sans Condensed', sans-serif;
@@ -58,4 +59,17 @@ $light_font: 'Open Sans Condensed', sans-serif;
 	margin-bottom: rhythm(1);
 
 	@include block_shadow();
+}
+
+@mixin gold_button() {
+	font-size: 16px;
+	font-family: $light_font;
+	color: #FFF;
+	font-weight: normal;
+	text-transform: uppercase;
+	line-height: $content_block_header_height;
+	height: $content_block_header_height;
+	background: $main_gold;
+	padding: 0 15px;
+	margin: 0;
 }

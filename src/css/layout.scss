@@ -175,7 +175,6 @@ body {
 		margin-right: rhythm(1);
 	}
 
-	$content_block_header_height: rhythm(1.5);
 	.content_block_section {
 		@include content_block();
 
@@ -198,20 +197,11 @@ body {
 
 		}
 		.content_block_section__header.content_block_section__header {
+			@include gold_button();
 			position: absolute;
 			left: 0;
 			bottom: 100%;
-			font-size: 16px;
-			font-family: $light_font;
-			color: #FFF;
-			font-weight: normal;
-			text-transform: uppercase;
-			line-height: $content_block_header_height;
 			display: block;
-			height: $content_block_header_height;
-			background: $main_gold;
-			padding: 0 15px;
-			margin: 0;
 			margin-left: -1px;
 		}
 		.content_block_section__more_link.content_block_section__more_link {
