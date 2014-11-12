@@ -184,7 +184,6 @@ body {
 
 		a {
 			color: inherit;
-			transition: color 300ms;
 
 			&:hover {
 				color: #000;
@@ -233,7 +232,6 @@ body {
 				border-style: solid;
 				border-width: 5px 0 5px 5px;
 				border-color: transparent transparent transparent $border_grey;
-				transition: border-color 300ms;
 			}
 
 			&:hover::after {
@@ -265,7 +263,6 @@ body {
 					color: $menu_grey;
 					text-decoration: none;
 					font-size: 16px;
-					transition: color 300ms;
 
 					&:hover {
 						color: #000;
@@ -289,7 +286,6 @@ body {
 			text-decoration: none;
 			color: inherit;
 			font-weight: bold;
-			transition: color 300ms;
 
 			&:hover {
 				color: #000;
@@ -310,3 +306,36 @@ body {
 			text-decoration: underline;
 		}
 }
+
+.columns {
+	clear: both;
+
+		&::after {
+			content: '';
+			display: table;
+			clear: both;
+		}
+	}
+	.columns__column {
+		width: calc( 50% - #{rhythm(0.5)} );
+		float: left;
+		margin-top: 0;
+
+			&:nth-child(2) {
+				float: right;
+			}
+	}
+
+
+.media_object.media_object {
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+
+	}
+	.media_object__image {
+		margin-right: 10px;
+	}
+	.media_object__desc {
+		margin-top: 0;
+	}
