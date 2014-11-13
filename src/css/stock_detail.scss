@@ -1,0 +1,34 @@
+@import "global";
+
+.stock_gallery {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-bottom: - rhythm(1);
+
+		.no-flexbox & {
+			font-size: 0;
+
+				> * {
+					font-size: 1rem;
+				}
+		}
+
+	}
+	.stock_gallery__item {
+		text-decoration: none;
+		margin: 0;
+		margin-bottom: rhythm(1);
+
+			img {
+				display: block;
+			}
+
+			.no-flexbox & {
+				display: inline-block;
+				vertical-align: top;
+				margin-right: 10px;
+			}
+	}
+
+@import "inc/fancybox";

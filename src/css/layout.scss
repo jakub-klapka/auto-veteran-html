@@ -132,6 +132,10 @@ body {
 	@include content_block();
 }
 
+.typo {
+	@extend %typo;
+}
+
 .main_content {
 	@extend %typo;
 	padding: rhythm(1);
@@ -293,6 +297,11 @@ body {
 		}
 
 		&:hover {
+			text-decoration: underline;
+		}
+
+		strong {
+			font-weight: normal;
 			text-decoration: underline;
 		}
 }

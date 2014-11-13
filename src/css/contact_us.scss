@@ -38,6 +38,10 @@
 
 			label {
 				display: block;
+
+				&.no-top-margin {
+					margin-top: 0;
+				}
 			}
 
 			%inputs {
@@ -69,6 +73,16 @@
 				padding: rhythm(0.25) rhythm(0.5);
 			}
 
+	}
+
+	.wpcf7-not-valid-tip {
+		margin-top: 0;
+	}
+
+	.wpcf7-response-output {
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+		margin-bottom: 0 !important;
 	}
 
 	.contact_us__map {
