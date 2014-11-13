@@ -6,8 +6,15 @@
 	.contact_us__address_table {
 
 		td {
+			margin-top: 0;
 			vertical-align: top;
 			padding: 0 rhythm(0.5) rhythm(0.5) 0;
+
+			br {
+				display: inline;
+				line-height: 0;
+				margin: 0;
+			}
 		}
 
 	}
@@ -15,6 +22,7 @@
 	.contact_us__ident_table {
 
 		td {
+			margin-top: 0;
 
 			&:first-child {
 				white-space: nowrap;
@@ -47,8 +55,9 @@
 			%inputs {
 				margin-top: 0;
 				border: 1px solid $border_grey;
-				background-image: linear-gradient( to bottom, lighten( $border_grey, 20% ) 0%, transparent 100% );
-				//background-image: linear-gradient( to bottom, #fcfcfc 0%, transparent 100% );
+
+				//background-image: linear-gradient( to bottom, lighten( $border_grey, 20% ) 0%, transparent 100% );
+				background: $body_bg;
 				padding: 0 5px;
 				font-size: 14px;
 			}
