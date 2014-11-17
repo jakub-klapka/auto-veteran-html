@@ -23,18 +23,17 @@
 		vertical-align: top;
 		margin-top: 0;
 
-			&:hover {
-				text-decoration: underline;
+		}
+		a.stock__item.stock__item:hover {
+			text-decoration: underline;
 
-				.stock__name {
-					color: #000;
-				}
-
-				.stock__image {
-					border-color: darken( $border_grey, 10% );
-				}
+			.stock__name {
+				color: #000;
 			}
 
+			.stock__image {
+				border-color: darken( $border_grey, 10% );
+			}
 		}
 		.stock__image {
 			border: 3px solid #e5e5e5;
