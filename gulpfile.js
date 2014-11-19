@@ -106,4 +106,4 @@ gulp.task( 'livereload', function() {
 Dev
  */
 gulp.task( 'dev', [ 'css_watch', 'livereload' ] );
-gulp.task( 'default', [ gulpsync.sync( [ 'svg_sprite', 'css' ] ), 'js', 'images' ] );
+gulp.task( 'default', gulpsync.sync( [ 'svg_sprite', 'css', 'js', 'images' ] ) );

@@ -3,6 +3,10 @@
 .contact_us {
 
 	}
+	.contact_us__label {
+		@include rhythm-text( 14px, 1 );
+	}
+
 	.contact_us__address_table {
 
 		td {
@@ -80,6 +84,8 @@
 				background-color: transparent;
 				margin-top: rhythm(1);
 				padding: rhythm(0.25) rhythm(0.5);
+				display: inline-block;
+				vertical-align: top;
 			}
 
 	}
@@ -92,6 +98,10 @@
 		margin-left: 0 !important;
 		margin-right: 0 !important;
 		margin-bottom: 0 !important;
+		display: inline-block !important;
+		width: 315px;
+		margin-top: 25.6px !important;
+		vertical-align: top;
 	}
 
 	.contact_us__map {
@@ -111,7 +121,7 @@
 			@include gold_button();
 			position: absolute;
 			bottom: 0;
-			right: 0;
-			background: rgba( $main_gold, 0.5 );
+			right: 3px;
+			background: rgba( $main_gold, 0.7 );
 			transition: background-color 300ms;
 		}

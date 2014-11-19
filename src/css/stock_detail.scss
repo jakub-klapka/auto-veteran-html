@@ -1,34 +1,33 @@
 @import "global";
 
 .stock_gallery {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	margin-bottom: - rhythm(1);
+	font-size: 0;
 
-		.no-flexbox & {
-			font-size: 0;
-
-				> * {
-					font-size: 1rem;
-				}
+		& > * {
+			font-size: 1rem;
 		}
 
 	}
 	.stock_gallery__item {
+		display: inline-block;
+		width: 33.3%;
 		text-decoration: none;
 		margin: 0;
 		margin-bottom: rhythm(1);
 
 			img {
-				display: block;
+				display: inline-block;
 			}
 
-			.no-flexbox & {
-				display: inline-block;
-				vertical-align: top;
-				margin-right: 10px;
+			&:nth-child( 3n ) {
+				text-align: right;
 			}
+
+			&:nth-child( 3n - 1 ) {
+				text-align: center;
+			}
+
+
 	}
 
 @import "inc/fancybox";

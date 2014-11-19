@@ -54,9 +54,14 @@
 				}
 			}
 		}
+		.news__item__meta__excerpt{
+			margin-top: rhythm(0.25);
+		}
+
 		.news__item__meta__date {
 			color: darken( $border_grey, 30% );
 			font-family: $light_font;
+			@include rhythm-text( 15px, 1 );
 		}
 
 
