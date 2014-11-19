@@ -28,6 +28,14 @@ body {
 
 .main_header {
 	margin-bottom: rhythm(1);
+	position: relative;
+	}
+	.main_header__logo {
+		position: absolute;
+		display: block;
+		left: 34px;
+		top: 22px;
+		z-index: 7000;
 	}
 	.main_header__image {
 		display: block;
