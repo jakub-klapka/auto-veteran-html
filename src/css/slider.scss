@@ -1,0 +1,46 @@
+@import "global";
+
+@import "inc/nivo-slider";
+
+.nivoSlider {
+	height: 300px;
+}
+
+.nivo-directionNav {
+	opacity: 0.3;
+	transition: opacity 300ms;
+	z-index: 9999;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+
+}
+
+.nivoSlider:hover .nivo-directionNav {
+	opacity: 1;
+}
+
+%arrows {
+	font-size: 0;
+	color: transparent;
+	padding: 10px;
+	background: rgba( #000, 0.2 );
+}
+
+.nivo-prevNav {
+	@extend %arrows;
+
+		&::after {
+			@include svg_sprite_arrow-left();
+		}
+}
+
+.nivo-nextNav {
+	@extend %arrows;
+
+		&::after {
+			@include svg_sprite_arrow-right();
+		}
+}

@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="dist/css/home.css"/>
 	<link rel="stylesheet" href="dist/css/stock.css"/>
 	<link rel="stylesheet" href="dist/css/news.css"/>
+	<link rel="stylesheet" href="dist/css/slider.css"/>
 
 
 </head>
@@ -18,7 +19,13 @@
 <div class="page_wrap">
 
 	<header class="main_header" itemscope itemtype="http://schema.org/WPHeader">
-		<img src="//placehold.it/960x300" alt="Logo" class="main_header__image" itemprop="image"/>
+		<!--<img src="//placehold.it/960x300" alt="Logo" class="main_header__image" itemprop="image"/>-->
+		<div id="nivo_slider" class="nivoSlider main_header__image" data-timeout="6000">
+			<img src="//placehold.it/960x300&text=Slide1" alt="" />
+			<img data-src="//placehold.it/960x300&text=Slide2" alt="" />
+			<img data-src="//placehold.it/960x300&text=Slide3" alt="" />
+		</div>
+
 
 		<nav class="main_header__nav" role="navigation">
 			<ul class="main_header__nav__menu" itemscope itemtype="http://schema.org/SiteNavigationElement" >
@@ -271,6 +278,11 @@
 <!-- jquery, trunk8 -->
 <script type="text/javascript" src="src/js/video_carousel.js"></script>
 
+<!-- jq -->
+<script type="text/javascript" src="src/js/libs/jquery.nivo.slider.js"></script>
+
+<!-- jq, nivo-slider -->
+<script type="text/javascript" src="src/js/slider.js"></script>
 
 
 </body>

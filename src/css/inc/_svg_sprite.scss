@@ -1,0 +1,24 @@
+@mixin svg_sprite() {
+    font-size: 10px;
+    content:' ';
+    vertical-align:middle;
+    display: inline-block;
+    background-image: url("../images/svg_sprite.svg");
+    background-repeat: no-repeat;
+    background-size: (4.1*10px) (11*10px);
+}
+
+
+@mixin svg_sprite_arrow-left {
+	@include svg_sprite();
+    background-position: (-1*10px) (-1*10px);
+    width: (2.1*10px);
+    height: (3.5*10px);
+}
+
+@mixin svg_sprite_arrow-right {
+	@include svg_sprite();
+    background-position: (-1*10px) (-6.5*10px);
+    width: (2.1*10px);
+    height: (3.5*10px);
+}

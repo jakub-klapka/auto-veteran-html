@@ -8,7 +8,9 @@ var gulp = require( 'gulp' ),
 	plumber = require( 'gulp-plumber' ),
 	uglify = require( 'gulp-uglify' ),
 	imagemin = require( 'gulp-imagemin' ),
-	livereload = require( 'gulp-livereload' );
+	livereload = require( 'gulp-livereload' ),
+	svg_sprite = require( 'gulp-svg-sprites' ),
+	gulpsync = require('gulp-sync')(gulp);;
 
 var sass_config = {
 	style: 'compressed'
@@ -24,6 +26,30 @@ var plumber_config = {
 		this.emit('end');
 	}
 };
+
+/*
+SVG sprites
+ */
+gulp.task( 'svg_sprite', function(){
+
+	return gulp.src( 'src/svg_sprite/*.svg' )
+		.pipe( plumber( plumber_config ) )
+		.pipe( imagemin( imagemin_config ) )
+		.pipe( svg_sprite({
+			preview: false,
+			cssFile: "src/css/inc/_svg_sprite.scss",
+			templates: {
+				css: require("fs").readFileSync("src/svg_sprite/template.tmpl", "utf-8")
+			},
+			svgPath: '../images/svg_sprite.svg',
+			svg: {
+				sprite: 'dist/images/svg_sprite.svg'
+			},
+			padding: 10
+		}) )
+		.pipe( gulp.dest('') );
+
+} );
 
 /*
 CSS
@@ -80,4 +106,4 @@ gulp.task( 'livereload', function() {
 Dev
  */
 gulp.task( 'dev', [ 'css_watch', 'livereload' ] );
-gulp.task( 'default', [ 'css', 'js', 'images' ] )
+gulp.task( 'default', [ gulpsync.sync( [ 'svg_sprite', 'css' ] ), 'js', 'images' ] );
