@@ -29,6 +29,12 @@
 		@include rhythm-text(26px, 1);
 	}
 
+	h2 + table,
+	h2 + p,
+	h2 + div {
+		margin-top: rhythm( 0.5 );
+	}
+
 	ul, ol {
 		li {
 			margin-top: 0;
