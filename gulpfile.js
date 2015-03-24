@@ -9,7 +9,7 @@ var gulp = require( 'gulp' ),
 	uglify = require( 'gulp-uglify' ),
 	imagemin = require( 'gulp-imagemin' ),
 	livereload = require( 'gulp-livereload' ),
-	svg_sprite = require( 'gulp-svg-sprites' ),
+	//svg_sprite = require( 'gulp-svg-sprites' ),
 	gulpsync = require('gulp-sync')(gulp);;
 
 var sass_config = {
@@ -29,6 +29,7 @@ var plumber_config = {
 
 /*
 SVG sprites
+Dont' work
  */
 gulp.task( 'svg_sprite', function(){
 
@@ -106,4 +107,4 @@ gulp.task( 'livereload', function() {
 Dev
  */
 gulp.task( 'dev', [ 'css_watch', 'livereload' ] );
-gulp.task( 'default', gulpsync.sync( [ 'svg_sprite', 'css', 'js', 'images' ] ) );
+gulp.task( 'default', gulpsync.sync( [ 'css', 'js', 'images' ] ) );

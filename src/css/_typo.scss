@@ -23,6 +23,7 @@
 
 	h1 {
 		@include rhythm-text(32px, 1);
+		line-height: 1.2em;
 	}
 
 	h2 {
