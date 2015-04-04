@@ -369,3 +369,31 @@ body {
 
 
 @import "inc/fancybox";
+
+.partner {
+	left: 400px;
+	position: absolute;
+	top: 5px;
+	width: 144px;
+}
+
+.partner-title {
+	color: #5d5d5d;
+	font-size: 11px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.partner-logo {
+	background-image: url("../images/partner-logo.png");
+	background-position: center top;
+	display: block;
+	overflow: hidden;
+	text-indent: -9999px;
+	width: 144px;
+	height: 20px;
+}
+
+.partner-logo:hover {
+	background-position: center bottom;
+}
